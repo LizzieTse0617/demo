@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>AO Healthcare Center | Check your result</title>
+    <script src="js/main.js" type="module"></script>
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="left-panel">
+        <!-- Left panel content -->
+        <p id="p-name"></p>
+        patient name
+      </div>
+
+      <div class="right-panel">
+        <!-- Right panel content -->
+
+        <!-- message -->
+        <div class="container" id="container">
+          <section class="message" id="message">
+            <header class="header">Your result is ready.</header>
+            <button id="myButton">View</button>
+            <p id="myText" style="display: none"></p>
+          </section>
+
+          <!-- report -->
+          <section class="report-container" id="report-container">
+            <p id="report" style="display: none"></p>
+          </section>
+
+          <!-- report -->
+
+          <div class="contact-prompt"></div>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+  </body>
+</html>
