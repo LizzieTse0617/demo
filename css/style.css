@@ -1,13 +1,9 @@
 :root {
-  --color-darkgrey: #181b22;
-  --color-background: #f1f5f9;
+  --color-background: #f6f6f6;
   --color-middlegrey: #2e3036;
-  --color-lightgrey: #cecece;
   --color-white: #ffffff;
-  --color-highlight_red: #eb315a;
-  --color-highlight_orange: #e97000;
-  --color-light-purple: #c340ca;
-  --color-dark-purple: #953dad;
+  --color-blue: #257ce0;
+  --color-green: #0abca4;
 }
 
 html {
@@ -21,101 +17,191 @@ body {
   background-color: var(--color-background);
 }
 
+/* login-page */
+.login-container {
+  max-width: 500px;
+  margin: 150px auto;
+  background-color: var(--color-background);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type='text'],
+input[type='password'] {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px;
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--color-darkblue);
+}
+/* login-page */
+
 header {
   color: var(--color-middlegrey);
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+
   font-weight: 500;
-  background-color: var(--color-white);
+
   text-align: center;
 }
 
 .container {
   background-color: var(--color-white);
-
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-
-  margin: 1rem auto;
+  grid-area: box1;
 }
 
 .report-container,
 #report-container {
-  background-color: var(--color-background);
   align-items: center;
-  padding: 2rem;
+}
+
+.chatbox {
+  grid-area: box3;
+}
+
+.chatbox,
+.contact-prompt {
+  background-color: var(--color-white);
+  text-align: left;
+  padding: 1rem;
+  border-radius: 1rem;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  min-height: 30rem;
+  margin-bottom: 5rem;
+}
+
+.myText,
+#myText {
+  border: 3px solid yellow;
 }
 
 .statement,
 #statement {
-  color: 'red';
   font-size: 2rem;
-}
-.report,
-#report {
-  color: 'Red';
-}
-
-.message {
-  padding: 1rem;
 }
 
 #myButton {
   display: inline-block;
-  padding: 0.5rem 3rem;
+  padding: 1rem 3rem;
   font-size: 1rem;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  background-color: var(--color-blue);
   cursor: pointer;
-  margin-bottom: 3rem;
+  margin: 2rem;
+  color: var(--color-white);
 }
 
 #myButton:hover {
-  background-color: #ccc;
+  background-color: var(--color-green);
 }
 
 #myButton:focus {
   outline: none;
+  background-color: var(--color-green);
+  border: 1px solid var(--color-green);
   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.left-panel {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+  padding-left: 1rem;
+}
+.contact-prompt {
+  grid-area: box2;
 }
 
 .grid-container {
   display: grid;
-
-  grid-template-columns: minmax(0, 1fr);
-  grid-gap: 20px;
-  border: 3px solid red;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1fr;
+  grid-gap: 10px;
 }
 
-.left-panel {
-  background-color: #f0f0f0;
-  border: 3px solid red;
+.container {
+  background-color: var(--color-white);
+
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 /* desktop */
-@media only screen and (min-width: 45em) {
-  .header {
-    font-size: 3rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    font-weight: 500;
-  }
+@media only screen and (min-width: 60em) {
   .container {
     background-color: var(--color-white);
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5rem;
-    max-width: 1024px;
+    display: grid;
+    border-radius: 2rem;
+    width: 100%;
   }
+  .header {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+
+  .left-panel {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    max-width: 400px;
+    min-height: 100vh;
+
+    padding-left: 1rem;
+  }
+
+  .chatbox,
+  .contact-prompt {
+    padding: 2rem;
+    border-radius: 2rem;
+  }
+
   .grid-container {
-    grid-template-columns: 0.4fr 1fr;
+    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: 1fr;
   }
   .left-panel {
-    background-color: #f0f0f0;
     max-width: 400px;
+  }
+
+  .right-panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2rem;
+    grid-template-areas: 'box1 box1' 'box2 box3';
+    min-height: 80vh;
+    padding: 1rem;
   }
 }

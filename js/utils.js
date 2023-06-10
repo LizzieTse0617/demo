@@ -7,4 +7,5 @@ class NetworkError extends Error {
     this.text = response.statusText;
   }
 }
+
 export { NetworkError };

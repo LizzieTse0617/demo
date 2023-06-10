@@ -16,8 +16,11 @@
     <div class="grid-container">
       <div class="left-panel">
         <!-- Left panel content -->
-        <p id="p-name"></p>
-        patient name
+        <p id="patient-fname"></p>
+        <p id="patient-lname"></p>
+        <p id="patient-dob"></p>
+        <p id="patient-gender"></p>
+        <p id="patient-address"></p>
       </div>
 
       <div class="right-panel">
@@ -28,17 +31,27 @@
           <section class="message" id="message">
             <header class="header">Your result is ready.</header>
             <button id="myButton">View</button>
-            <p id="myText" style="display: none"></p>
+
+            <!-- report -->
+            <div id="report">
+              <p id="myText" style="display: none"></p>
+              <div class="report-container" id="report-container">
+                <p id="report" style="display: none"></p>
+              </div>
+            </div>
           </section>
+        </div>
 
-          <!-- report -->
-          <section class="report-container" id="report-container">
-            <p id="report" style="display: none"></p>
-          </section>
+        <!-- prompt -->
 
-          <!-- report -->
-
-          <div class="contact-prompt"></div>
+        <div class="contact-prompt">
+          <h3>Inquire about Your Test Results?</h3>
+          Input your keywords in below chat box.
+        </div>
+        <!-- chatbox -->
+        <div class="chatbox">
+          <h3>Have Questions? Chat with Us</h3>
+          Input your questions here.
         </div>
       </div>
     </div>
