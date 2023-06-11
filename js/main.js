@@ -98,6 +98,21 @@ const APP = {
         'report'
       ).innerHTML = `Test Name: ${testResult.test_name}, Your Value: ${testResult.value}${testResult.unit}, Reference Range: ${testResult.reference_range}, Result: ${result}`;
 
+      // Create the img element
+
+      let report = document.getElementById('report');
+      const ref1 = document.createElement('img');
+      ref1.src = 'https://lizzietse0617.github.io/demo/image/Frame%203.png';
+      report.insertBefore(ref1, report.childNodes[2]);
+
+      const ref2 = document.createElement('img');
+      ref2.src = 'https://lizzietse0617.github.io/demo/image/Frame%204.png';
+      report.insertBefore(ref2, report.childNodes[2]);
+
+      const ref3 = document.createElement('img');
+      ref3.src = 'https://lizzietse0617.github.io/demo/image/Frame%205.png';
+      report.insertBefore(ref3, report.childNodes[2]);
+
       /* NLP */
       // Create the img element
       const imgElement = document.createElement('img');
