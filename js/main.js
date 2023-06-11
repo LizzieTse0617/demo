@@ -97,7 +97,7 @@ const APP = {
       document.getElementById(
         'report'
       ).innerHTML = `Test Name: ${testResult.test_name}, Your Value: ${testResult.value}${testResult.unit}, Reference Range: ${testResult.reference_range}, Result: ${result}`;
-      report.style.marginBottom = '20px';
+
       // Create the img element
 
       let report = document.getElementById('report');
