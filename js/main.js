@@ -1,5 +1,3 @@
-import JSON from './patient.json';
-
 const APP = {
   init() {
     // APP.httpRequest();
@@ -35,7 +33,7 @@ const APP = {
 
   fetchData() {
     // Fetching URL
-    fetch(JSON)
+    fetch('https://lizzietse0617.github.io/demo/js/patient.json')
       .then((res) => {
         return res.json();
       })
