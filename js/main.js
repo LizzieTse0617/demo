@@ -101,13 +101,14 @@ const APP = {
       /* NLP */
       // Create the img element
       const imgElement = document.createElement('img');
-      imgElement.src = '../image/Frame 1.png';
+      imgElement.src =
+        'https://lizzietse0617.github.io/demo/image/Frame%201.png';
       const parentElement = document.querySelector('.contact-prompt');
       parentElement.insertBefore(imgElement, parentElement.childNodes[2]);
 
       /* CHATGBT */
       const imgChat = document.createElement('img');
-      imgChat.src = '../image/Frame 2.png';
+      imgChat.src = 'https://lizzietse0617.github.io/demo/image/Frame%202.png';
       const parentChat = document.querySelector('.chatbox');
       parentChat.insertBefore(imgChat, parentChat.childNodes[2]);
     });
