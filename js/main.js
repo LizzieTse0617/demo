@@ -97,20 +97,23 @@ const APP = {
       document.getElementById(
         'report'
       ).innerHTML = `Test Name: ${testResult.test_name}, Your Value: ${testResult.value}${testResult.unit}, Reference Range: ${testResult.reference_range}, Result: ${result}`;
-
+      report.style.marginBottom = '20px';
       // Create the img element
 
       let report = document.getElementById('report');
       const ref1 = document.createElement('img');
       ref1.src = 'https://lizzietse0617.github.io/demo/image/Frame%203.png';
+      ref1.style.marginBottom = '10px';
       report.insertBefore(ref1, report.childNodes[2]);
 
       const ref2 = document.createElement('img');
       ref2.src = 'https://lizzietse0617.github.io/demo/image/Frame%204.png';
+      ref2.style.marginBottom = '10px';
       report.insertBefore(ref2, report.childNodes[2]);
 
       const ref3 = document.createElement('img');
       ref3.src = 'https://lizzietse0617.github.io/demo/image/Frame%205.png';
+      ref3.style.marginBottom = '10px';
       report.insertBefore(ref3, report.childNodes[2]);
 
       /* NLP */
