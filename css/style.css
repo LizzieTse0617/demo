@@ -74,10 +74,22 @@ header {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   grid-area: box1;
 }
+.abnormal-result {
+  color: red;
+}
+
+.normal-result {
+  color: green;
+}
 
 .report-container,
 #report-container {
   align-items: center;
+}
+
+#report {
+  color: black;
+  font-size: 1.2rem;
 }
 
 .chatbox {
@@ -148,6 +160,27 @@ header {
   grid-gap: 10px;
 }
 
+.message {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.select {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.selectTest {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+}
+
+#patient-fname {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
 .container {
   background-color: var(--color-white);
 
@@ -194,7 +227,11 @@ header {
   .left-panel {
     max-width: 400px;
   }
-
+  .select {
+    max-width: 400px;
+    align-items: center;
+    text-align: center;
+  }
   .right-panel {
     display: grid;
     grid-template-columns: 1fr 1fr;
